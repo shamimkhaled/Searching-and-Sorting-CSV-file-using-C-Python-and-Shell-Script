@@ -30,6 +30,7 @@ searchByCode()
 	
 }
 
+
 searchByProduct()
 {
 	echo "Enter the code to search: "
