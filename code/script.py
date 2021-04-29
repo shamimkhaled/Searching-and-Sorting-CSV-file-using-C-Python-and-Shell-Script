@@ -1,5 +1,6 @@
 import csv
 
+#Search by country code 
 def searchByCountryCode():
     country_code = input('Enter the country code: ')
     csv_file = csv.reader(open('/Users/Shamim/Desktop/CSE425_Assignment/data.csv', 'r'))
@@ -8,6 +9,7 @@ def searchByCountryCode():
         if country_code == row[4]:
             print(row)
 
+#Search by time reference
 def searchByTimeRef():
     time_ref = str(input('Enter the time reference: '))
     csv_file = csv.reader(open('/Users/Shamim/Desktop/CSE425_Assignment/data.csv', 'r'))
@@ -16,6 +18,7 @@ def searchByTimeRef():
         if time_ref == row[1]:
             print(row)
 
+#Search by product type
 def searchByProduct():
     product_type = input('Enter the product type: ')
     csv_file = csv.reader(open('/Users/Shamim/Desktop/CSE425_Assignment/data.csv', 'r'))
@@ -24,6 +27,7 @@ def searchByProduct():
         if product_type == row[5]:
             print(row)
 
+#Search by account
 def searchByAccount():
     account = input('Enter the account: ')
     csv_file = csv.reader(open('/Users/Shamim/Desktop/CSE425_Assignment/data.csv', 'r'))
@@ -32,6 +36,7 @@ def searchByAccount():
         if account == row[2]:
             print(row)
 
+#Search by code
 def searchByCode():
     code = input('Enter the code: ')
     csv_file = csv.reader(open('/Users/Shamim/Desktop/CSE425_Assignment/data.csv', 'r'))
@@ -40,6 +45,7 @@ def searchByCode():
         if code == row[3]:
             print(row)
 
+#Search by status
 def searchByStatus():
     status = input('Enter the status: ')
     csv_file = csv.reader(open('/Users/Shamim/Desktop/CSE425_Assignment/data.csv', 'r'))
@@ -48,7 +54,8 @@ def searchByStatus():
         if status == row[7]:
             print(row)
 
-#Sorted CSV file specific column in alphabatic order
+#Sorting Code.......
+#Sorted CSV file by specific column in alphabatically order
 def sortByColumn():
     import csv
     import operator
@@ -61,6 +68,7 @@ def sortByColumn():
     for rows in sort:
         print(rows)
 
+#Program criteria or features
 print('1.Search by country code')
 print('2.Search by time references')
 print('3.Search by product type')
